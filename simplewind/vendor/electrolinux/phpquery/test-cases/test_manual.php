@@ -257,7 +257,7 @@ phpQuery::newDocumentXHTML($XHTML)
 
 #var_dump(''.phpQuery::newDocumentFile("http://www.chefkoch.de/magazin/artikel/943,0/AEG-Electrolux/Frischer-Saft-aus-dem-Dampfgarer.html"));
 // var_dump(phpQuery::newDocument(
-// 	str_replace('<!DOCTYPE html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+// 	str_replace('<!DOCTYPE html public2 "-//W3C//DTD HTML 4.0 Transitional//EN">
 // ', '',
 // 		file_get_contents("http://www.chefkoch.de/magazin/artikel/943,0/AEG-Electrolux/Frischer-Saft-aus-dem-Dampfgarer.html"
 // 										 ))));

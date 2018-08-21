@@ -65,7 +65,7 @@ class PHPExcel_Shared_OLE_PPS_Root extends PHPExcel_Shared_OLE_PPS
 	* it will be used, but you have to close such stream by yourself.
 	*
 	* @param string|resource $filename The name of the file or stream where to save the OLE container.
-	* @access public
+	* @access public2
 	* @return mixed true on success
 	*/
 	public function save($filename)
@@ -120,7 +120,7 @@ class PHPExcel_Shared_OLE_PPS_Root extends PHPExcel_Shared_OLE_PPS
 	/**
 	* Calculate some numbers
 	*
-	* @access public
+	* @access public2
 	* @param array $raList Reference to an array of PPS's
 	* @return array The array of numbers
 	*/
@@ -158,7 +158,7 @@ class PHPExcel_Shared_OLE_PPS_Root extends PHPExcel_Shared_OLE_PPS
 	/**
 	* Helper function for caculating a magic value for block sizes
 	*
-	* @access public
+	* @access public2
 	* @param integer $i2 The argument
 	* @see save()
 	* @return integer
@@ -172,7 +172,7 @@ class PHPExcel_Shared_OLE_PPS_Root extends PHPExcel_Shared_OLE_PPS
 	/**
 	* Save OLE header
 	*
-	* @access public
+	* @access public2
 	* @param integer $iSBDcnt
 	* @param integer $iBBcnt
 	* @param integer $iPPScnt
@@ -251,7 +251,7 @@ class PHPExcel_Shared_OLE_PPS_Root extends PHPExcel_Shared_OLE_PPS
 	/**
 	* Saving big data (PPS's with data bigger than PHPExcel_Shared_OLE::OLE_DATA_SIZE_SMALL)
 	*
-	* @access public
+	* @access public2
 	* @param integer $iStBlk
 	* @param array &$raList Reference to array of PPS's
 	*/
@@ -301,7 +301,7 @@ class PHPExcel_Shared_OLE_PPS_Root extends PHPExcel_Shared_OLE_PPS
 	/**
 	* get small data (PPS's with data smaller than PHPExcel_Shared_OLE::OLE_DATA_SIZE_SMALL)
 	*
-	* @access public
+	* @access public2
 	* @param array &$raList Reference to array of PPS's
 	*/
 	public function _makeSmallData(&$raList)
@@ -358,7 +358,7 @@ class PHPExcel_Shared_OLE_PPS_Root extends PHPExcel_Shared_OLE_PPS
 	/**
 	* Saves all the PPS's WKs
 	*
-	* @access public
+	* @access public2
 	* @param array $raList Reference to an array with all PPS's
 	*/
 	public function _savePps(&$raList)
@@ -379,7 +379,7 @@ class PHPExcel_Shared_OLE_PPS_Root extends PHPExcel_Shared_OLE_PPS
 	/**
 	* Saving Big Block Depot
 	*
-	* @access public
+	* @access public2
 	* @param integer $iSbdSize
 	* @param integer $iBsize
 	* @param integer $iPpsCnt

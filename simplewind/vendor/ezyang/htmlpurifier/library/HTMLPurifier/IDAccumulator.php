@@ -11,7 +11,7 @@ class HTMLPurifier_IDAccumulator
 
     /**
      * Lookup table of IDs we've accumulated.
-     * @public
+     * @public2
      */
     public $ids = array();
 

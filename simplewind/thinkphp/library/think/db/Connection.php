@@ -126,7 +126,7 @@ abstract class Connection
 
     /**
      * 构造函数 读取数据库配置信息
-     * @access public
+     * @access public2
      * @param array $config 数据库配置数组
      */
     public function __construct(array $config = [])
@@ -149,7 +149,7 @@ abstract class Connection
 
     /**
      * 获取当前连接器类对应的Builder类
-     * @access public
+     * @access public2
      * @return string
      */
     public function getBuilder()
@@ -163,7 +163,7 @@ abstract class Connection
 
     /**
      * 调用Query类的查询方法
-     * @access public
+     * @access public2
      * @param string    $method 方法名称
      * @param array     $args 调用参数
      * @return mixed
@@ -183,7 +183,7 @@ abstract class Connection
 
     /**
      * 取得数据表的字段信息
-     * @access public
+     * @access public2
      * @param string $tableName
      * @return array
      */
@@ -191,7 +191,7 @@ abstract class Connection
 
     /**
      * 取得数据库的表信息
-     * @access public
+     * @access public2
      * @param string $dbName
      * @return array
      */
@@ -207,7 +207,7 @@ abstract class Connection
 
     /**
      * 对返数据表字段信息进行大小写转换出来
-     * @access public
+     * @access public2
      * @param array $info 字段信息
      * @return array
      */
@@ -230,7 +230,7 @@ abstract class Connection
 
     /**
      * 获取数据库的配置参数
-     * @access public
+     * @access public2
      * @param string $config 配置名称
      * @return mixed
      */
@@ -241,7 +241,7 @@ abstract class Connection
 
     /**
      * 设置数据库的配置参数
-     * @access public
+     * @access public2
      * @param string|array      $config 配置名称
      * @param mixed             $value 配置值
      * @return void
@@ -257,7 +257,7 @@ abstract class Connection
 
     /**
      * 连接数据库方法
-     * @access public
+     * @access public2
      * @param array         $config 连接参数
      * @param integer       $linkNum 连接序号
      * @param array|bool    $autoConnection 是否自动连接主数据库（用于分布式）
@@ -311,7 +311,7 @@ abstract class Connection
 
     /**
      * 释放查询结果
-     * @access public
+     * @access public2
      */
     public function free()
     {
@@ -320,7 +320,7 @@ abstract class Connection
 
     /**
      * 获取PDO对象
-     * @access public
+     * @access public2
      * @return \PDO|false
      */
     public function getPdo()
@@ -334,7 +334,7 @@ abstract class Connection
 
     /**
      * 执行查询 返回数据集
-     * @access public
+     * @access public2
      * @param string        $sql sql指令
      * @param array         $bind 参数绑定
      * @param bool          $master 是否在主服务器读操作
@@ -403,7 +403,7 @@ abstract class Connection
 
     /**
      * 执行语句
-     * @access public
+     * @access public2
      * @param  string        $sql sql指令
      * @param  array         $bind 参数绑定
      * @param  Query         $query 查询对象
@@ -476,7 +476,7 @@ abstract class Connection
 
     /**
      * 根据参数绑定组装最终的SQL语句 便于调试
-     * @access public
+     * @access public2
      * @param string    $sql 带参数绑定的sql语句
      * @param array     $bind 参数绑定列表
      * @return string
@@ -510,7 +510,7 @@ abstract class Connection
      * 参数绑定
      * 支持 ['name'=>'value','id'=>123] 对应命名占位符
      * 或者 ['value',123] 对应问号占位符
-     * @access public
+     * @access public2
      * @param array $bind 要绑定的参数列表
      * @return void
      * @throws BindParamException
@@ -541,7 +541,7 @@ abstract class Connection
 
     /**
      * 存储过程的输入输出参数绑定
-     * @access public
+     * @access public2
      * @param array $bind 要绑定的参数列表
      * @return void
      * @throws BindParamException
@@ -610,7 +610,7 @@ abstract class Connection
 
     /**
      * 执行数据库事务
-     * @access public
+     * @access public2
      * @param callable $callback 数据操作方法回调
      * @return mixed
      * @throws PDOException
@@ -638,7 +638,7 @@ abstract class Connection
 
     /**
      * 启动事务
-     * @access public
+     * @access public2
      * @return bool|mixed
      * @throws \Exception
      */
@@ -679,7 +679,7 @@ abstract class Connection
 
     /**
      * 用于非自动提交状态下面的查询提交
-     * @access public
+     * @access public2
      * @return void
      * @throws PDOException
      */
@@ -696,7 +696,7 @@ abstract class Connection
 
     /**
      * 事务回滚
-     * @access public
+     * @access public2
      * @return void
      * @throws PDOException
      */
@@ -747,7 +747,7 @@ abstract class Connection
     /**
      * 批处理执行SQL语句
      * 批处理的指令都认为是execute操作
-     * @access public
+     * @access public2
      * @param array $sqlArray SQL批处理指令
      * @return boolean
      */
@@ -774,7 +774,7 @@ abstract class Connection
 
     /**
      * 获得查询次数
-     * @access public
+     * @access public2
      * @param boolean $execute 是否包含所有查询
      * @return integer
      */
@@ -785,7 +785,7 @@ abstract class Connection
 
     /**
      * 获得执行次数
-     * @access public
+     * @access public2
      * @return integer
      */
     public function getExecuteTimes()
@@ -795,7 +795,7 @@ abstract class Connection
 
     /**
      * 关闭数据库（或者重新连接）
-     * @access public
+     * @access public2
      * @return $this
      */
     public function close()
@@ -845,7 +845,7 @@ abstract class Connection
 
     /**
      * 获取最近一次查询的sql语句
-     * @access public
+     * @access public2
      * @return string
      */
     public function getLastSql()
@@ -855,7 +855,7 @@ abstract class Connection
 
     /**
      * 获取最近插入的ID
-     * @access public
+     * @access public2
      * @param string  $sequence     自增序列名
      * @return string
      */
@@ -866,7 +866,7 @@ abstract class Connection
 
     /**
      * 获取返回或者影响的记录数
-     * @access public
+     * @access public2
      * @return integer
      */
     public function getNumRows()
@@ -876,7 +876,7 @@ abstract class Connection
 
     /**
      * 获取最近的错误信息
-     * @access public
+     * @access public2
      * @return string
      */
     public function getError()
@@ -895,7 +895,7 @@ abstract class Connection
 
     /**
      * SQL指令安全过滤
-     * @access public
+     * @access public2
      * @param string $str SQL字符串
      * @param bool   $master 是否主库查询
      * @return string
@@ -938,7 +938,7 @@ abstract class Connection
 
     /**
      * 监听SQL执行
-     * @access public
+     * @access public2
      * @param callable $callback 回调方法
      * @return void
      */
@@ -1056,7 +1056,7 @@ abstract class Connection
 
     /**
      * 析构方法
-     * @access public
+     * @access public2
      */
     public function __destruct()
     {

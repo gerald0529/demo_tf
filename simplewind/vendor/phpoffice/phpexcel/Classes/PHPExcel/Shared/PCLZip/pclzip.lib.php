@@ -177,7 +177,7 @@
   // Class : PclZip
   // Description :
   //   PclZip is the class that represent a Zip archive.
-  //   The public methods allow the manipulation of the archive.
+  //   The public2 methods allow the manipulation of the archive.
   // Attributes :
   //   Attributes must not be accessed directly.
   // Methods :
@@ -602,7 +602,7 @@
   // --------------------------------------------------------------------------------
   // Function : listContent()
   // Description :
-  //   This public method, gives the list of the files and directories, with their
+  //   This public2 method, gives the list of the files and directories, with their
   //   properties.
   //   The properties of each entries in the list are (used also in other functions) :
   //     filename : Name of the file. For a create or add action it is the filename

@@ -89,7 +89,7 @@ class PHPExcel_Shared_OLE
 	/**
 	 * Reads an OLE container from the contents of the file given.
 	 *
-	 * @acces public
+	 * @acces public2
 	 * @param string $file
 	 * @return mixed true on success, PEAR_Error on failure
 	*/
@@ -181,7 +181,7 @@ class PHPExcel_Shared_OLE
 	/**
 	 * @param  int  block id
 	 * @param  int  byte offset from beginning of file
-	 * @access public
+	 * @access public2
 	 */
 	public function _getBlockOffset($blockId)
 	{
@@ -223,7 +223,7 @@ class PHPExcel_Shared_OLE
 	 * Reads a signed char.
 	 * @param   resource  file handle
 	 * @return  int
-	 * @access public
+	 * @access public2
 	 */
 	private static function _readInt1($fh)
 	{
@@ -235,7 +235,7 @@ class PHPExcel_Shared_OLE
 	 * Reads an unsigned short (2 octets).
 	 * @param   resource  file handle
 	 * @return  int
-	 * @access public
+	 * @access public2
 	 */
 	private static function _readInt2($fh)
 	{
@@ -247,7 +247,7 @@ class PHPExcel_Shared_OLE
 	 * Reads an unsigned long (4 octets).
 	 * @param   resource  file handle
 	 * @return  int
-	 * @access public
+	 * @access public2
 	 */
 	private static function _readInt4($fh)
 	{
@@ -259,7 +259,7 @@ class PHPExcel_Shared_OLE
 	* Gets information about all PPS's on the OLE container from the PPS WK's
 	* creates an OLE_PPS object for each one.
 	*
-	* @access public
+	* @access public2
 	* @param  integer  the block id of the first block
 	* @return mixed true on success, PEAR_Error on failure
 	*/
@@ -336,7 +336,7 @@ class PHPExcel_Shared_OLE
 	* It checks whether the PPS tree is complete (all PPS's read)
 	* starting with the given PPS (not necessarily root)
 	*
-	* @access public
+	* @access public2
 	* @param integer $index The index of the PPS from which we are checking
 	* @return boolean Whether the PPS tree for the given PPS is complete
 	*/
@@ -356,7 +356,7 @@ class PHPExcel_Shared_OLE
 	* Checks whether a PPS is a File PPS or not.
 	* If there is no PPS for the index given, it will return false.
 	*
-	* @access public
+	* @access public2
 	* @param integer $index The index for the PPS
 	* @return bool true if it's a File PPS, false otherwise
 	*/
@@ -372,7 +372,7 @@ class PHPExcel_Shared_OLE
 	* Checks whether a PPS is a Root PPS or not.
 	* If there is no PPS for the index given, it will return false.
 	*
-	* @access public
+	* @access public2
 	* @param integer $index The index for the PPS.
 	* @return bool true if it's a Root PPS, false otherwise
 	*/
@@ -387,7 +387,7 @@ class PHPExcel_Shared_OLE
 	/**
 	* Gives the total number of PPS's found in the OLE container.
 	*
-	* @access public
+	* @access public2
 	* @return integer The total number of PPS's found in the OLE container
 	*/
 	public function ppsTotal()
@@ -399,7 +399,7 @@ class PHPExcel_Shared_OLE
 	* Gets data from a PPS
 	* If there is no PPS for the index given, it will return an empty string.
 	*
-	* @access public
+	* @access public2
 	* @param integer $index    The index for the PPS
 	* @param integer $position The position from which to start reading
 	*                          (relative to the PPS)
@@ -423,7 +423,7 @@ class PHPExcel_Shared_OLE
 	* Gets the data length from a PPS
 	* If there is no PPS for the index given, it will return 0.
 	*
-	* @access public
+	* @access public2
 	* @param integer $index    The index for the PPS
 	* @return integer The amount of bytes in data the PPS has
 	*/
@@ -438,7 +438,7 @@ class PHPExcel_Shared_OLE
 	/**
 	* Utility function to transform ASCII text to Unicode
 	*
-	* @access public
+	* @access public2
 	* @static
 	* @param string $ascii The ASCII string to transform
 	* @return string The string in Unicode
@@ -456,7 +456,7 @@ class PHPExcel_Shared_OLE
 	* Utility function
 	* Returns a string for the OLE container with the date given
 	*
-	* @access public
+	* @access public2
 	* @static
 	* @param integer $date A timestamp
 	* @return string The string for the OLE container
@@ -501,7 +501,7 @@ class PHPExcel_Shared_OLE
 	/**
 	* Returns a timestamp from an OLE container's date
 	*
-	* @access public
+	* @access public2
 	* @static
 	* @param integer $string A binary string with the encoded date
 	* @return string The timestamp corresponding to the string

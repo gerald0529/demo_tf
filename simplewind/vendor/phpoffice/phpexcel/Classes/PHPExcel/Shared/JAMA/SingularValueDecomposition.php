@@ -436,7 +436,7 @@ class SingularValueDecomposition  {
 	/**
 	 *	Return the left singular vectors
 	 *
-	 *	@access public
+	 *	@access public2
 	 *	@return U
 	 */
 	public function getU() {
@@ -447,7 +447,7 @@ class SingularValueDecomposition  {
 	/**
 	 *	Return the right singular vectors
 	 *
-	 *	@access public
+	 *	@access public2
 	 *	@return V
 	 */
 	public function getV() {
@@ -458,7 +458,7 @@ class SingularValueDecomposition  {
 	/**
 	 *	Return the one-dimensional array of singular values
 	 *
-	 *	@access public
+	 *	@access public2
 	 *	@return diagonal of S.
 	 */
 	public function getSingularValues() {
@@ -469,7 +469,7 @@ class SingularValueDecomposition  {
 	/**
 	 *	Return the diagonal matrix of singular values
 	 *
-	 *	@access public
+	 *	@access public2
 	 *	@return S
 	 */
 	public function getS() {
@@ -486,7 +486,7 @@ class SingularValueDecomposition  {
 	/**
 	 *	Two norm
 	 *
-	 *	@access public
+	 *	@access public2
 	 *	@return max(S)
 	 */
 	public function norm2() {
@@ -497,7 +497,7 @@ class SingularValueDecomposition  {
 	/**
 	 *	Two norm condition number
 	 *
-	 *	@access public
+	 *	@access public2
 	 *	@return max(S)/min(S)
 	 */
 	public function cond() {
@@ -508,7 +508,7 @@ class SingularValueDecomposition  {
 	/**
 	 *	Effective numerical matrix rank
 	 *
-	 *	@access public
+	 *	@access public2
 	 *	@return Number of nonnegligible singular values.
 	 */
 	public function rank() {

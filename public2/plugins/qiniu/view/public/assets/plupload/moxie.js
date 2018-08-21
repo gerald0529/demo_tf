@@ -122,7 +122,7 @@
 
 /**
 @class moxie/core/utils/Basic
-@public
+@public2
 @static
 */
 
@@ -664,7 +664,7 @@ define('moxie/core/utils/Basic', [], function() {
 
 /**
 @class moxie/core/utils/Encode
-@public
+@public2
 @static
 */
 
@@ -849,7 +849,7 @@ define('moxie/core/utils/Encode', [], function() {
 
 /**
 @class moxie/core/utils/Env
-@public
+@public2
 @static
 */
 
@@ -1759,7 +1759,7 @@ define('moxie/core/Exceptions', [
 
 /**
 @class moxie/core/utils/Dom
-@public
+@public2
 @static
 */
 
@@ -2436,7 +2436,7 @@ define('moxie/runtime/Runtime', [
 		}());
 
 
-		// public methods
+		// public2 methods
 		Basic.extend(this, {
 			/**
 			Specifies whether runtime instance was initialized or not
@@ -3358,7 +3358,7 @@ define("moxie/core/I18n", [
 
 /**
 @class moxie/core/utils/Mime
-@public
+@public2
 @static
 */
 
@@ -4516,7 +4516,7 @@ define('moxie/file/FileReader', [
 
 /**
 @class moxie/core/utils/Url
-@public
+@public2
 @static
 */
 
@@ -6967,7 +6967,7 @@ define("moxie/runtime/html5/file/Blob", [
 
 /**
 @class moxie/core/utils/Events
-@public
+@public2
 @static
 */
 

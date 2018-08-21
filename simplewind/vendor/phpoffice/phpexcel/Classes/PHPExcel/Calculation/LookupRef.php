@@ -249,7 +249,7 @@ class PHPExcel_Calculation_LookupRef {
 	 * Excel Function:
 	 *		=HYPERLINK(linkURL,displayName)
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Logical Functions
 	 * @param	string			$linkURL		Value to check, is also the value returned when no error
 	 * @param	string			$displayName	Value to return when testValue is an error condition

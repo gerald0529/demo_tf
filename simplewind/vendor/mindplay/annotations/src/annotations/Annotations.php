@@ -23,7 +23,7 @@ namespace mindplay\annotations;
 abstract class Annotations
 {
     /**
-     * @var array Configuration for any public property of AnnotationManager.
+     * @var array Configuration for any public2 property of AnnotationManager.
      */
     public static $config;
 

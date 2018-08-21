@@ -104,7 +104,7 @@ class PHPExcel_Calculation_Functions {
 	/**
 	 * Set the Compatibility Mode
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Function Configuration
 	 * @param	 string		$compatibilityMode		Compatibility Mode
 	 *												Permitted values are:
@@ -127,7 +127,7 @@ class PHPExcel_Calculation_Functions {
 	/**
 	 * Return the current Compatibility Mode
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Function Configuration
 	 * @return	 string		Compatibility Mode
 	 *							Possible Return values are:
@@ -143,7 +143,7 @@ class PHPExcel_Calculation_Functions {
 	/**
 	 * Set the Return Date Format used by functions that return a date/time (Excel, PHP Serialized Numeric or PHP Object)
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Function Configuration
 	 * @param	 string	$returnDateType			Return Date Format
 	 *												Permitted values are:
@@ -166,7 +166,7 @@ class PHPExcel_Calculation_Functions {
 	/**
 	 * Return the current Return Date Format for functions that return a date/time (Excel, PHP Serialized Numeric or PHP Object)
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Function Configuration
 	 * @return	 string		Return Date Format
 	 *							Possible Return values are:
@@ -182,7 +182,7 @@ class PHPExcel_Calculation_Functions {
 	/**
 	 * DUMMY
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Error Returns
 	 * @return	string	#Not Yet Implemented
 	 */
@@ -194,7 +194,7 @@ class PHPExcel_Calculation_Functions {
 	/**
 	 * DIV0
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Error Returns
 	 * @return	string	#Not Yet Implemented
 	 */
@@ -212,7 +212,7 @@ class PHPExcel_Calculation_Functions {
 	 * Returns the error value #N/A
 	 *		#N/A is the error value that means "no value is available."
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Logical Functions
 	 * @return	string	#N/A!
 	 */
@@ -226,7 +226,7 @@ class PHPExcel_Calculation_Functions {
 	 *
 	 * Returns the error value #NUM!
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Error Returns
 	 * @return	string	#NUM!
 	 */
@@ -240,7 +240,7 @@ class PHPExcel_Calculation_Functions {
 	 *
 	 * Returns the error value #NAME?
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Error Returns
 	 * @return	string	#NAME?
 	 */
@@ -254,7 +254,7 @@ class PHPExcel_Calculation_Functions {
 	 *
 	 * Returns the error value #REF!
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Error Returns
 	 * @return	string	#REF!
 	 */
@@ -268,7 +268,7 @@ class PHPExcel_Calculation_Functions {
 	 *
 	 * Returns the error value #NULL!
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Error Returns
 	 * @return	string	#NULL!
 	 */
@@ -282,7 +282,7 @@ class PHPExcel_Calculation_Functions {
 	 *
 	 * Returns the error value #VALUE!
 	 *
-	 * @access	public
+	 * @access	public2
 	 * @category Error Returns
 	 * @return	string	#VALUE!
 	 */

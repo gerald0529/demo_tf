@@ -19,7 +19,7 @@ class BelongsTo extends OneToOne
 {
     /**
      * 构造函数
-     * @access public
+     * @access public2
      * @param Model  $parent 上级模型对象
      * @param string $model 模型名
      * @param string $foreignKey 关联外键
@@ -42,7 +42,7 @@ class BelongsTo extends OneToOne
      * 延迟获取关联数据
      * @param string   $subRelation 子关联名
      * @param \Closure $closure     闭包查询条件
-     * @access public
+     * @access public2
      * @return array|false|\PDOStatement|string|Model
      */
     public function getRelation($subRelation = '', $closure = null)
@@ -66,7 +66,7 @@ class BelongsTo extends OneToOne
 
     /**
      * 根据关联条件查询当前模型
-     * @access public
+     * @access public2
      * @param string  $operator 比较操作符
      * @param integer $count    个数
      * @param string  $id       关联表的统计字段
@@ -79,7 +79,7 @@ class BelongsTo extends OneToOne
 
     /**
      * 根据关联条件查询当前模型
-     * @access public
+     * @access public2
      * @param  mixed  $where 查询条件（数组或者闭包）
      * @param  mixed  $fields   字段
      * @return Query
@@ -108,7 +108,7 @@ class BelongsTo extends OneToOne
 
     /**
      * 预载入关联查询（数据集）
-     * @access public
+     * @access public2
      * @param array     $resultSet 数据集
      * @param string    $relation 当前关联名
      * @param string    $subRelation 子关联名
@@ -162,7 +162,7 @@ class BelongsTo extends OneToOne
 
     /**
      * 预载入关联查询（数据）
-     * @access public
+     * @access public2
      * @param Model     $result 数据对象
      * @param string    $relation 当前关联名
      * @param string    $subRelation 子关联名
@@ -194,7 +194,7 @@ class BelongsTo extends OneToOne
 
     /**
      * 添加关联数据
-     * @access public
+     * @access public2
      * @param Model $model       关联模型对象
      * @return Model
      */
@@ -211,7 +211,7 @@ class BelongsTo extends OneToOne
 
     /**
      * 注销关联数据
-     * @access public
+     * @access public2
      * @return Model
      */
     public function dissociate()

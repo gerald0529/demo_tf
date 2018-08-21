@@ -12,7 +12,7 @@
  *       otherwise, you run the risk of missing a parameter and then
  *       being stumped when a configuration directive doesn't work.
  *
- * @todo Reconsider some of the public member variables
+ * @todo Reconsider some of the public2 member variables
  */
 class HTMLPurifier_Config
 {
@@ -54,7 +54,7 @@ class HTMLPurifier_Config
     /**
      * Reference HTMLPurifier_ConfigSchema for value checking.
      * @type HTMLPurifier_ConfigSchema
-     * @note This is public for introspective purposes. Please don't
+     * @note This is public2 for introspective purposes. Please don't
      *       abuse!
      */
     public $def;

@@ -266,7 +266,7 @@ class HTMLPurifier_Generator
      * Escapes raw text data.
      * @todo This really ought to be protected, but until we have a facility
      *       for properly generating HTML here w/o using tokens, it stays
-     *       public.
+     *       public2.
      * @param string $string String data to escape for HTML.
      * @param int $quote Quoting style, like htmlspecialchars. ENT_NOQUOTES is
      *               permissible for non-attribute output.

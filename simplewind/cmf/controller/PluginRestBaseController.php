@@ -25,7 +25,7 @@ class PluginRestBaseController extends RestBaseController
     /**
      * 构造函数
      * @param Request $request Request对象
-     * @access public
+     * @access public2
      */
     public function __construct(Request $request = null)
     {

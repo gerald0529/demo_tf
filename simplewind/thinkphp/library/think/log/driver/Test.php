@@ -18,7 +18,7 @@ class Test
 {
     /**
      * 日志写入接口
-     * @access public
+     * @access public2
      * @param array $log 日志信息
      * @return bool
      */

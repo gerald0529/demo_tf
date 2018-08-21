@@ -22,7 +22,7 @@ class ClassNotFoundException extends \RuntimeException
 
     /**
      * 获取类名
-     * @access public
+     * @access public2
      * @return string
      */
     public function getClass()

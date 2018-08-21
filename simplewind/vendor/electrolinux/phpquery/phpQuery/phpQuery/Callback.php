@@ -53,7 +53,7 @@ class Callback
 		return $this;
 	}
 	// TODO test me
-//	public2 function addParams() {
+//	public function addParams() {
 //		$params = func_get_args();
 //		return new Callback($this->callback, $this->params+$params);
 //	}
@@ -145,7 +145,7 @@ class CallbackParameterToReference extends Callback {
 //	 * @param $paramIndex
 //	 * @todo implement $paramIndex; param index choose which callback param will be passed to reference
 //	 */
-//	public2 function __construct(&$reference, $name = null){
+//	public function __construct(&$reference, $name = null){
 //		$this->callback =& $reference;
 //	}
 //}

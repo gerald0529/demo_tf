@@ -8,7 +8,7 @@
  *       way to represent the internals of HTMLDefinition, and our
  *       implementation is by no means conforming and does not directly
  *       use the normative DTDs or XML schemas.
- * @note The public2 variables in a module should almost directly
+ * @note The public variables in a module should almost directly
  *       correspond to the variables in HTMLPurifier_HTMLDefinition.
  *       However, the prefix info carries no special meaning in these
  *       objects (include it anyway if that's the correspondence though).

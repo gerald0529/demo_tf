@@ -270,7 +270,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
 	 * Add data to the beginning of the workbook (note the reverse order)
 	 * and to the end of the workbook.
 	 *
-	 * @access public2
+	 * @access public
 	 * @see PHPExcel_Writer_Excel5_Workbook::storeWorkbook()
 	 */
 	function close()
@@ -603,7 +603,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
 	/**
 	 * Set the option to print the row and column headers on the printed page.
 	 *
-	 * @access public2
+	 * @access public
 	 * @param integer $print Whether to print the headers or not. Defaults to 1 (print).
 	 */
 	function printRowColHeaders($print = 1)
@@ -709,7 +709,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
 	 *		 -2 : row or column out of range
 	 *		 -3 : long string truncated to 255 chars
 	 *
-	 * @access public2
+	 * @access public
 	 * @param integer $row	Zero indexed row
 	 * @param integer $col	Zero indexed column
 	 * @param string  $str	The string to write
@@ -745,7 +745,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
 	 *		 -2 : row or column out of range
 	 *		 -3 : long string truncated to 255 chars
 	 *
-	 * @access public2
+	 * @access public
 	 * @param integer $row	Zero indexed row
 	 * @param integer $col	Zero indexed column
 	 * @param string  $str	The string to write
@@ -2354,7 +2354,7 @@ class PHPExcel_Writer_Excel5_Worksheet extends PHPExcel_Writer_Excel5_BIFFwriter
 	/**
 	 * Insert a 24bit bitmap image in a worksheet.
 	 *
-	 * @access public2
+	 * @access public
 	 * @param integer $row	 The row we are going to insert the bitmap into
 	 * @param integer $col	 The column we are going to insert the bitmap into
 	 * @param mixed   $bitmap  The bitmap filename or GD-image resource

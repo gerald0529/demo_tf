@@ -75,7 +75,7 @@ class Pgsql extends Connection
      */
     public function getTables($dbName = '')
     {
-        $sql    = "select tablename as Tables_in_test from pg_tables where  schemaname ='public2'";
+        $sql    = "select tablename as Tables_in_test from pg_tables where  schemaname =public";
         $pdo    = $this->query($sql, [], false, true);
         $result = $pdo->fetchAll(PDO::FETCH_ASSOC);
         $info   = [];

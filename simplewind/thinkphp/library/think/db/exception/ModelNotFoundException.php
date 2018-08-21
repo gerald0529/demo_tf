@@ -32,7 +32,7 @@ class ModelNotFoundException extends DbException
 
     /**
      * 获取模型类名
-     * @access public2
+     * @access public
      * @return string
      */
     public function getModel()

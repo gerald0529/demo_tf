@@ -1684,8 +1684,8 @@ class HTML5_Tokenizer {
                             /* If the next six characters are an ASCII
                             case-insensitive match for the word "PUBLIC", then
                             consume those characters and switch to the before
-                            DOCTYPE public2 identifier state. */
-                            $state = 'before DOCTYPE public2 identifier';
+                            DOCTYPE public identifier state. */
+                            $state = 'before DOCTYPE public identifier';
 
                         } elseif ($nextSix === 'SYSTEM') {
                             /* Otherwise, if the next six characters are an ASCII
@@ -1709,7 +1709,7 @@ class HTML5_Tokenizer {
                     }
                 break;
 
-                case 'before DOCTYPE public2 identifier':
+                case 'before DOCTYPE public identifier':
                     /* Consume the next input character: */
                     $char = $this->stream->char();
 
@@ -1718,21 +1718,21 @@ class HTML5_Tokenizer {
                            U+000A LINE FEED (LF)
                            U+000C FORM FEED (FF)
                            U+0020 SPACE
-                        Stay in the before DOCTYPE public2 identifier state. */
+                        Stay in the before DOCTYPE public identifier state. */
                     } elseif ($char === '"') {
                         /* U+0022 QUOTATION MARK (")
-                        Set the DOCTYPE token's public2 identifier to the empty
-                        string (not missing), then switch to the DOCTYPE public2
+                        Set the DOCTYPE token's public identifier to the empty
+                        string (not missing), then switch to the DOCTYPE public
                         identifier (double-quoted) state. */
-                        $this->token['public2'] = '';
-                        $state = 'DOCTYPE public2 identifier (double-quoted)';
+                        $this->token['public'] = '';
+                        $state = 'DOCTYPE public identifier (double-quoted)';
                     } elseif ($char === "'") {
                         /* U+0027 APOSTROPHE (')
-                        Set the DOCTYPE token's public2 identifier to the empty
-                        string (not missing), then switch to the DOCTYPE public2
+                        Set the DOCTYPE token's public identifier to the empty
+                        string (not missing), then switch to the DOCTYPE public
                         identifier (single-quoted) state. */
-                        $this->token['public2'] = '';
-                        $state = 'DOCTYPE public2 identifier (single-quoted)';
+                        $this->token['public'] = '';
+                        $state = 'DOCTYPE public identifier (single-quoted)';
                     } elseif ($char === '>') {
                         /* Parse error. Set the DOCTYPE token's force-quirks flag
                         to on. Emit that DOCTYPE token. Switch to the data state. */
@@ -1767,14 +1767,14 @@ class HTML5_Tokenizer {
                     }
                 break;
 
-                case 'DOCTYPE public2 identifier (double-quoted)':
+                case 'DOCTYPE public identifier (double-quoted)':
                     /* Consume the next input character: */
                     $char = $this->stream->char();
 
                     if ($char === '"') {
                         /* U+0022 QUOTATION MARK (")
-                        Switch to the after DOCTYPE public2 identifier state. */
-                        $state = 'after DOCTYPE public2 identifier';
+                        Switch to the after DOCTYPE public identifier state. */
+                        $state = 'after DOCTYPE public identifier';
                     } elseif ($char === '>') {
                         /* U+003E GREATER-THAN SIGN (>)
                         Parse error. Set the DOCTYPE token's force-quirks flag
@@ -1802,20 +1802,20 @@ class HTML5_Tokenizer {
                     } else {
                         /* Anything else
                         Append the current input character to the current
-                        DOCTYPE token's public2 identifier. Stay in the DOCTYPE
-                        public2 identifier (double-quoted) state. */
-                        $this->token['public2'] .= $char;
+                        DOCTYPE token's public identifier. Stay in the DOCTYPE
+                        public identifier (double-quoted) state. */
+                        $this->token['public'] .= $char;
                     }
                 break;
 
-                case 'DOCTYPE public2 identifier (single-quoted)':
+                case 'DOCTYPE public identifier (single-quoted)':
                     /* Consume the next input character: */
                     $char = $this->stream->char();
 
                     if ($char === "'") {
                         /* U+0027 APOSTROPHE (')
-                        Switch to the after DOCTYPE public2 identifier state. */
-                        $state = 'after DOCTYPE public2 identifier';
+                        Switch to the after DOCTYPE public identifier state. */
+                        $state = 'after DOCTYPE public identifier';
                     } elseif ($char === '>') {
                         /* U+003E GREATER-THAN SIGN (>)
                         Parse error. Set the DOCTYPE token's force-quirks flag
@@ -1843,13 +1843,13 @@ class HTML5_Tokenizer {
                     } else {
                         /* Anything else
                         Append the current input character to the current
-                        DOCTYPE token's public2 identifier. Stay in the DOCTYPE
-                        public2 identifier (double-quoted) state. */
-                        $this->token['public2'] .= $char;
+                        DOCTYPE token's public identifier. Stay in the DOCTYPE
+                        public identifier (double-quoted) state. */
+                        $this->token['public'] .= $char;
                     }
                 break;
 
-                case 'after DOCTYPE public2 identifier':
+                case 'after DOCTYPE public identifier':
                     /* Consume the next input character: */
                     $char = $this->stream->char();
 
@@ -1858,7 +1858,7 @@ class HTML5_Tokenizer {
                            U+000A LINE FEED (LF)
                            U+000C FORM FEED (FF)
                            U+0020 SPACE
-                        Stay in the after DOCTYPE public2 identifier state. */
+                        Stay in the after DOCTYPE public identifier state. */
                     } elseif ($char === '"') {
                         /* U+0022 QUOTATION MARK (")
                         Set the DOCTYPE token's system identifier to the

@@ -53,7 +53,7 @@ class PHPExcel_Calculation_Logical {
 	 * Excel Function:
 	 *		=TRUE()
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Logical Functions
 	 * @return	boolean		True
 	 */
@@ -70,7 +70,7 @@ class PHPExcel_Calculation_Logical {
 	 * Excel Function:
 	 *		=FALSE()
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Logical Functions
 	 * @return	boolean		False
 	 */
@@ -95,7 +95,7 @@ class PHPExcel_Calculation_Logical {
 	 *		If any argument value is a string, or a Null, the function returns a #VALUE! error, unless the string holds
 	 *			the value TRUE or FALSE, in which case it is evaluated as the corresponding boolean value
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Logical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	boolean		The logical AND of the arguments.
@@ -150,7 +150,7 @@ class PHPExcel_Calculation_Logical {
 	 *		If any argument value is a string, or a Null, the function returns a #VALUE! error, unless the string holds
 	 *			the value TRUE or FALSE, in which case it is evaluated as the corresponding boolean value
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Logical Functions
 	 * @param	mixed		$arg,...		Data values
 	 * @return	boolean		The logical OR of the arguments.
@@ -204,7 +204,7 @@ class PHPExcel_Calculation_Logical {
 	 *		If any argument value is a string, or a Null, the function returns a #VALUE! error, unless the string holds
 	 *			the value TRUE or FALSE, in which case it is evaluated as the corresponding boolean value
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Logical Functions
 	 * @param	mixed		$logical	A value or expression that can be evaluated to TRUE or FALSE
 	 * @return	boolean		The boolean inverse of the argument.
@@ -250,7 +250,7 @@ class PHPExcel_Calculation_Logical {
 	 *			If condition is FALSE and ReturnIfFalse is blank, then the value 0 (zero) is returned.
 	 *			ReturnIfFalse can be another formula.
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Logical Functions
 	 * @param	mixed	$condition		Condition to evaluate
 	 * @param	mixed	$returnIfTrue	Value to return when condition is true
@@ -272,7 +272,7 @@ class PHPExcel_Calculation_Logical {
 	 * Excel Function:
 	 *		=IFERROR(testValue,errorpart)
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Logical Functions
 	 * @param	mixed	$testValue	Value to check, is also the value returned when no error
 	 * @param	mixed	$errorpart	Value to return when testValue is an error condition

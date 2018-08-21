@@ -134,7 +134,7 @@ class PHPExcel_Writer_Excel5_Xf
 	/**
 	 * Constructor
 	 *
-	 * @access public2
+	 * @access public
 	 * @param PHPExcel_Style	The XF format
 	 */
 	public function __construct(PHPExcel_Style $style = null)
@@ -279,7 +279,7 @@ class PHPExcel_Writer_Excel5_Xf
 	/**
 	 * Sets the cell's bottom border color
 	 *
-	 * @access public2
+	 * @access public
 	 * @param int $colorIndex Color index
 	 */
 	function setBottomColor($colorIndex)
@@ -290,7 +290,7 @@ class PHPExcel_Writer_Excel5_Xf
 	/**
 	 * Sets the cell's top border color
 	 *
-	 * @access public2
+	 * @access public
 	 * @param int $colorIndex Color index
 	 */
 	function setTopColor($colorIndex)
@@ -301,7 +301,7 @@ class PHPExcel_Writer_Excel5_Xf
 	/**
 	 * Sets the cell's left border color
 	 *
-	 * @access public2
+	 * @access public
 	 * @param int $colorIndex Color index
 	 */
 	function setLeftColor($colorIndex)
@@ -312,7 +312,7 @@ class PHPExcel_Writer_Excel5_Xf
 	/**
 	 * Sets the cell's right border color
 	 *
-	 * @access public2
+	 * @access public
 	 * @param int $colorIndex Color index
 	 */
 	function setRightColor($colorIndex)
@@ -323,7 +323,7 @@ class PHPExcel_Writer_Excel5_Xf
 	/**
 	 * Sets the cell's diagonal border color
 	 *
-	 * @access public2
+	 * @access public
 	 * @param int $colorIndex Color index
 	 */
 	function setDiagColor($colorIndex)
@@ -335,7 +335,7 @@ class PHPExcel_Writer_Excel5_Xf
 	/**
 	 * Sets the cell's foreground color
 	 *
-	 * @access public2
+	 * @access public
 	 * @param int $colorIndex Color index
 	 */
 	function setFgColor($colorIndex)
@@ -346,7 +346,7 @@ class PHPExcel_Writer_Excel5_Xf
 	/**
 	 * Sets the cell's background color
 	 *
-	 * @access public2
+	 * @access public
 	 * @param int $colorIndex Color index
 	 */
 	function setBgColor($colorIndex)
@@ -358,7 +358,7 @@ class PHPExcel_Writer_Excel5_Xf
 	 * Sets the index to the number format record
 	 * It can be date, time, currency, etc...
 	 *
-	 * @access public2
+	 * @access public
 	 * @param integer $numberFormatIndex Index to format record
 	 */
 	function setNumberFormatIndex($numberFormatIndex)

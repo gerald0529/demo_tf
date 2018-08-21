@@ -782,7 +782,7 @@ class PHPExcel_Calculation_Engineering {
 	 *	Excel Function:
 	 *		BESSELI(x,ord)
 	 *
-	 *	@access	public2
+	 *	@access	public
 	 *	@category Engineering Functions
 	 *	@param	float		$x		The value at which to evaluate the function.
 	 *								If x is nonnumeric, BESSELI returns the #VALUE! error value.
@@ -835,7 +835,7 @@ class PHPExcel_Calculation_Engineering {
 	 *	Excel Function:
 	 *		BESSELJ(x,ord)
 	 *
-	 *	@access	public2
+	 *	@access	public
 	 *	@category Engineering Functions
 	 *	@param	float		$x		The value at which to evaluate the function.
 	 *								If x is nonnumeric, BESSELJ returns the #VALUE! error value.
@@ -924,7 +924,7 @@ class PHPExcel_Calculation_Engineering {
 	 *	Excel Function:
 	 *		BESSELK(x,ord)
 	 *
-	 *	@access	public2
+	 *	@access	public
 	 *	@category Engineering Functions
 	 *	@param	float		$x		The value at which to evaluate the function.
 	 *								If x is nonnumeric, BESSELK returns the #VALUE! error value.
@@ -1004,7 +1004,7 @@ class PHPExcel_Calculation_Engineering {
 	 *	Excel Function:
 	 *		BESSELY(x,ord)
 	 *
-	 *	@access	public2
+	 *	@access	public
 	 *	@category Engineering Functions
 	 *	@param	float		$x		The value at which to evaluate the function.
 	 *								If x is nonnumeric, BESSELK returns the #VALUE! error value.
@@ -1051,7 +1051,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		BIN2DEC(x)
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x		The binary number (as a string) that you want to convert. The number
 	 *								cannot contain more than 10 characters (10 bits). The most significant
@@ -1097,7 +1097,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		BIN2HEX(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x		The binary number (as a string) that you want to convert. The number
 	 *								cannot contain more than 10 characters (10 bits). The most significant
@@ -1151,7 +1151,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		BIN2OCT(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x		The binary number (as a string) that you want to convert. The number
 	 *								cannot contain more than 10 characters (10 bits). The most significant
@@ -1205,7 +1205,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		DEC2BIN(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x		The decimal integer you want to convert. If number is negative,
 	 *								valid place values are ignored and DEC2BIN returns a 10-character
@@ -1261,7 +1261,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		DEC2HEX(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x		The decimal integer you want to convert. If number is negative,
 	 *								places is ignored and DEC2HEX returns a 10-character (40-bit)
@@ -1315,7 +1315,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		DEC2OCT(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x		The decimal integer you want to convert. If number is negative,
 	 *								places is ignored and DEC2OCT returns a 10-character (30-bit)
@@ -1369,7 +1369,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		HEX2BIN(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x			the hexadecimal number you want to convert. Number cannot
 	 *									contain more than 10 characters. The most significant bit of
@@ -1417,7 +1417,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		HEX2DEC(x)
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x		The hexadecimal number you want to convert. This number cannot
 	 *								contain more than 10 characters (40 bits). The most significant
@@ -1450,7 +1450,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		HEX2OCT(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x			The hexadecimal number you want to convert. Number cannot
 	 *									contain more than 10 characters. The most significant bit of
@@ -1499,7 +1499,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		OCT2BIN(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x			The octal number you want to convert. Number may not
 	 *									contain more than 10 characters. The most significant
@@ -1550,7 +1550,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		OCT2DEC(x)
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x		The octal number you want to convert. Number may not contain
 	 *								more than 10 octal characters (30 bits). The most significant
@@ -1583,7 +1583,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		OCT2HEX(x[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$x			The octal number you want to convert. Number may not contain
 	 *									more than 10 octal characters (30 bits). The most significant
@@ -1629,7 +1629,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		COMPLEX(realNumber,imaginary[,places])
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	float		$realNumber		The real coefficient of the complex number.
 	 * @param	float		$imaginary		The imaginary coefficient of the complex number.
@@ -1680,7 +1680,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		IMAGINARY(complexNumber)
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$complexNumber	The complex number for which you want the imaginary
 	 * 										coefficient.
@@ -1702,7 +1702,7 @@ class PHPExcel_Calculation_Engineering {
 	 * Excel Function:
 	 *		IMREAL(complexNumber)
 	 *
-	 * @access	public2
+	 * @access	public
 	 * @category Engineering Functions
 	 * @param	string		$complexNumber	The complex number for which you want the real coefficient.
 	 * @return	float
